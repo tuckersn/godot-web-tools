@@ -1,0 +1,21 @@
+{
+  "name": "godot-web-tools",
+  "version": "0.0.0",
+  "description": "TypeScript package for working with Godot HTML5 exports.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuckersn/Godot-Web-Tools.git"
+  },
+  "author": "tuckersn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tuckersn/Godot-Web-Tools/issues"
+  },
+  "homepage": "https://github.com/tuckersn/Godot-Web-Tools#readme",
+  "files": ["dist/**/*"]
+}
