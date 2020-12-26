@@ -172,7 +172,7 @@ export class Engine {
 	 * - Not all file downloads have started yet (usually on servers without multi-threading)
 	 * @param callback The callback function must accept two numeric arguments: the amount of bytes loaded so far, and the total number of bytes to load.
 	 */
-	public setProgressFunc(callback: Function): void {
+	public setProgressFunc(callback: (current: number, total: number) => any): void {
 		return this._ref.setProgressFunc(callback);
 	}
 
@@ -180,7 +180,7 @@ export class Engine {
 	 * Specify a callback function for handling the standard output stream. This method should usually only be used in debug pages. By default, `console.log()` is used.
 	 * @param callback The callback function must accept one string argument: the message to print.
 	 */
-	public setStdoutFunc(callback: Function): void {
+	public setStdoutFunc(callback: (output: String) => any): void {
 		return this._ref.setStdoutFunc(callback);
 	}
 
@@ -188,7 +188,7 @@ export class Engine {
 	 * Specify a callback function for handling the standard error stream. This method should usually only be used in debug pages. By default, `console.warn()` is used.
 	 * @param callback The callback function must accept one string argument: the message to print.
 	 */
-	public setStderrFunc(callback: Function): void {
+	public setStderrFunc(callback: (output: String) => any): void {
 		return this._ref.setStderrFunc(callback);
 	}
 
